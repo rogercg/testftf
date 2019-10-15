@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Precio unitario</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr *ngFor="let b of buys">
+                    <td>{{b.description}}</td>
+                    <td>{{b.price}}</td>
+                    <td>{{b.cant}}</td>
+                    <td>{{b.total}}</td>                    
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+</div>

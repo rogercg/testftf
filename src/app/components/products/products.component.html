@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">  
+            <div class="col-sm-9">
+                <div class="card" *ngFor="let p of productos">
+                    <img src="../../../assets/images/placeholder-square.png" class="card-img-top" alt="..." style="width: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{p.description}}</h5>
+                        <p class="card-text">S/{{p.price}}</p>
+                        <a (click)="addCart(p)" class="btn btn-primary">Agregar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div *ngFor="let c of car">
+                    {{c.description}} - {{c.price}}
+                </div>
+                <div>Total: {{total}}</div>
+                <a (click)="CreateCar()" class="btn btn-success">Agregar</a>
+            </div>
+    </div>
+</div>
